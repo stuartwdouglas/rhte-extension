@@ -9,14 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.stuartwdouglas.tdc-extension</groupId>
-    <artifactId>tdc-extension-parent</artifactId>
+    <groupId>com.github.stuartwdouglas.rhte-extension</groupId>
+    <artifactId>rhte-extension-parent</artifactId>
     <version>1.0.0.Final-SNAPSHOT</version>
-    <name>TDC Example Extension</name>
+    <name>RHTE Example Extension</name>
     <packaging>pom</packaging>
 
     <properties>
-        <quarkus.version>0.19.0</quarkus.version>
+        <quarkus.version>0.21.1</quarkus.version>
     </properties>
 
     <modules>
