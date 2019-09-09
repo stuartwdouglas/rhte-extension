@@ -3,11 +3,11 @@ package com.test;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("/hello")
+@Path("/getSupplier")
 public class HelloResource {
 
     @GET
     public String hello() {
-        return "hello";
+        return "getSupplier";
     }
 }
