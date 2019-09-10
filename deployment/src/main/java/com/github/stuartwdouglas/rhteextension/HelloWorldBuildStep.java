@@ -10,12 +10,12 @@ public class HelloWorldBuildStep {
 
     @BuildStep
     @Record(ExecutionTime.RUNTIME_INIT)
-    void sayHello(HelloWorldRecorder recorder) {
+    void sayHello(HelloWorldRecorder recorder, HelloConfig config) {
         System.out.println("About to say Hello");
         Supplier<String> supplier = recorder.getSupplier();
 
         for (int i = 0; i < 10; ++i) {
-            recorder.sayHello(supplier);
+            recorder.sayHello(supplier, config);
         }
     }
 }

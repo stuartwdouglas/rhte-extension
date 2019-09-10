@@ -16,8 +16,8 @@ public class HelloWorldRecorder {
         };
     }
 
-    public void sayHello(Supplier<String> p) {
-        System.out.println("Hello " + p.get());
+    public void sayHello(Supplier<String> p, HelloConfig config) {
+        System.out.println(config.greeting + " " + p.get());
     }
 
 }
